@@ -1,16 +1,15 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 
-function getButtonText() {
-  return "Click me"
-}
 
 const App = () => {
+  const buttonText = { text:'click me'}
+  const header = {text: 'Enter Name:'}
   return ( 
  <div>
-  <label className='label' for='name'>Enter Name:</label>
+  <label className='label' hmtlFor='name'>{header.text}</label>
   <input type='text' id='name'/ >
-  <button style={{backgroundColor: 'blue', color: 'white'}}>{getButtonText}</button>
+  <button style={{backgroundColor: 'blue', color: 'white'}}>{buttonText.text}</button>
 </div> )
 }
 
